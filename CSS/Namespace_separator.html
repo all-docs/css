@@ -59,7 +59,7 @@ htmlNameSpace|a {
 }
 </code></pre></div>
 <h4 id="result">Result</h4>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Named namespace example sample" id="frame_named_namespace_example" width="100%" height="100" src="about:blank" data-live-path="/en-US/docs/Web/CSS/Namespace_separator/" data-live-id="named_namespace_example" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Named namespace example sample</a></div>
 <p>The selector <code>|a</code>, a link not in a namespace, doesn't match any links. In HTML, the <code>http://www.w3.org/1999/xhtml</code> is implied, meaning all HTML is in a namespace, even if none is explicitly declared. In SVG, even if not explicitly set, the <code>http://www.w3.org/2000/svg</code> namespace is also implied. This means all the content is within at least one namespace.</p></div></section><section aria-labelledby="default_namespace_and_no_namespace"><h3 id="default_namespace_and_no_namespace"><a href="#default_namespace_and_no_namespace">Default namespace and no namespace</a></h3><div class="section-content"><p>In this example, we use JavaScript to create an element without a namespace and append it to the document. We set the SVG namespace to be the default namespace by defining the unnamed namespace with <code>@namespace</code>.</p>
 <div class="notecard note">
 <p><strong>Note:</strong>
@@ -114,7 +114,7 @@ p {
 }
 </code></pre></div>
 <h4 id="result_2">Result</h4>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Default namespace and no namespace sample" id="frame_default_namespace_and_no_namespace" width="100%" height="100" src="about:blank" data-live-path="/en-US/docs/Web/CSS/Namespace_separator/" data-live-id="default_namespace_and_no_namespace" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Default namespace and no namespace sample</a></div>
 <p>The selector with no namespace separator, the <code>a</code>, matched only the SVG <code>&lt;a&gt;</code> elements, as SVG was set as the default namespace.</p>
 <p>The selector with no namespace, the <code>|a</code>, matched the JavaScript defined and appended <code>&lt;a&gt;</code>, as that node is the only node that doesn't have a default namespace.</p></div></section><h2 id="specifications"><a href="#specifications">Specifications</a></h2><table class="standard-table"><thead><tr><th scope="col">Specification</th></tr></thead><tbody><tr><td><a href="https://drafts.csswg.org/css-namespaces/#declaration">CSS Namespaces Module Level 3<!-- --> <br><small># <!-- -->declaration</small></a></td></tr></tbody></table><h2 id="browser_compatibility"><a href="#browser_compatibility">Browser compatibility</a></h2><p>BCD tables only load in the browser<noscript> <!-- -->with JavaScript enabled. Enable JavaScript to view data.</noscript></p><section aria-labelledby="see_also"><h2 id="see_also"><a href="#see_also">See also</a></h2><div class="section-content"><ul>
 <li><a href="%40namespace.html"><code>@namespace</code></a></li>

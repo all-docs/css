@@ -105,7 +105,7 @@ transition-behavior: unset;
 <p>In addition, a starting state for the animation is set inside the <a href="%40starting-style.html"><code>@starting-style</code></a> at-rule. This is needed to avoid unexpected behavior. By default transitions are not triggered on elements' first style updates, or when the <code>display</code> type changes from <code>none</code> to another type. <code>@starting-style</code> allows you to override that default in a specific controlled fashion. Without this, the entry animation would not occur and the popover would just appear.</p>
 <h4 id="result">Result</h4>
 <p>The code renders as follows:</p>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Transitioning a popover sample" id="frame_transitioning_a_popover" width="100%" height="200" src="about:blank" data-live-path="/en-US/docs/Web/CSS/transition-behavior/" data-live-id="transitioning_a_popover" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Transitioning a popover sample</a></div>
 <div class="notecard note">
 <p><strong>Note:</strong>
 Because popovers change from <code>display: none</code> to <code>display: block</code> each time they are shown, the popover transitions from its <code>@starting-style</code> styles to its <code>[popover]:popover-open</code> styles every time the entry transition occurs. When the popover closes, it transitions from its <code>[popover]:popover-open</code> state to the default <code>[popover]</code> state.</p>

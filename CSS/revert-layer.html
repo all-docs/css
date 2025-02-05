@@ -30,7 +30,7 @@
 }
 </code></pre></div>
 <h4 id="result">Result</h4>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Default cascade layer behavior sample" id="frame_default_cascade_layer_behavior" src="about:blank" data-live-path="/en-US/docs/Web/CSS/revert-layer/" data-live-id="default_cascade_layer_behavior" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Default cascade layer behavior sample</a></div>
 <p>All the <code>&lt;li&gt;</code> elements match the <code>item</code> rule in the <code>special</code> layer and are red. This is the default cascade layer behavior, where rules in the <code>special</code> layer take precedence over rules in the <code>base</code> layer.</p></div></section><section aria-labelledby="revert_to_style_in_previous_cascade_layer"><h3 id="revert_to_style_in_previous_cascade_layer"><a href="#revert_to_style_in_previous_cascade_layer">Revert to style in previous cascade layer</a></h3><div class="section-content"><p>Let's examine how the <code>revert-layer</code> keyword changes the default cascade layer behavior. For this example, the <code>special</code> layer contains an additional <code>feature</code> rule targeting the first <code>&lt;li&gt;</code> element. The <code>color</code> property in this rule is set to <code>revert-layer</code>.</p>
 <h4 id="html_2">HTML</h4>
 <div class="code-example"><div class="example-header"><span class="language-name">html</span></div><pre class="brush: html notranslate"><code>&lt;p&gt;This example contains a list.&lt;/p&gt;
@@ -63,7 +63,7 @@
 }
 </code></pre></div>
 <h4 id="result_2">Result</h4>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Revert to style in previous cascade layer sample" id="frame_revert_to_style_in_previous_cascade_layer" src="about:blank" data-live-path="/en-US/docs/Web/CSS/revert-layer/" data-live-id="revert_to_style_in_previous_cascade_layer" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Revert to style in previous cascade layer sample</a></div>
 <p>With <code>color</code> set to <code>revert-layer</code>, the <code>color</code> property value rolls back to the value in the matching <code>feature</code> rule in the previous layer <code>base</code>, and so 'Item one' is now green.</p></div></section><section aria-labelledby="revert_to_style_in_previous_origin"><h3 id="revert_to_style_in_previous_origin"><a href="#revert_to_style_in_previous_origin">Revert to style in previous origin</a></h3><div class="section-content"><p>This example shows the <code>revert-layer</code> keyword behavior when there is no cascade layer to revert to <em>and</em> there is no matching CSS rule in the current layer to inherit the property value.</p>
 <h4 id="html_3">HTML</h4>
 <div class="code-example"><div class="example-header"><span class="language-name">html</span></div><pre class="brush: html notranslate"><code>&lt;p&gt;This example contains a list.&lt;/p&gt;
@@ -82,7 +82,7 @@
 }
 </code></pre></div>
 <h4 id="result_3">Result</h4>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Revert to style in previous origin sample" id="frame_revert_to_style_in_previous_origin" src="about:blank" data-live-path="/en-US/docs/Web/CSS/revert-layer/" data-live-id="revert_to_style_in_previous_origin" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Revert to style in previous origin sample</a></div>
 <p>The style for all <code>&lt;li&gt;</code> elements rolls back to the defaults in the user-agent origin.</p></div></section><h2 id="specifications"><a href="#specifications">Specifications</a></h2><table class="standard-table"><thead><tr><th scope="col">Specification</th></tr></thead><tbody><tr><td><a href="https://drafts.csswg.org/css-cascade-5/#revert-layer">CSS Cascading and Inheritance Level 5<!-- --> <br><small># <!-- -->revert-layer</small></a></td></tr></tbody></table><h2 id="browser_compatibility"><a href="#browser_compatibility">Browser compatibility</a></h2><p>BCD tables only load in the browser<noscript> <!-- -->with JavaScript enabled. Enable JavaScript to view data.</noscript></p><section aria-labelledby="see_also"><h2 id="see_also"><a href="#see_also">See also</a></h2><div class="section-content"><ul>
 <li><a href="initial.html"><code>initial</code></a></li>
 <li><a href="inherit.html"><code>inherit</code></a></li>

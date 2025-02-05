@@ -155,7 +155,7 @@ In some situations you might want to just hide overflowing positioned elements, 
 </code></pre></div>
 <h4 id="result">Result</h4>
 <p>This gives us the following result:</p>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Predefined try options sample" id="frame_predefined_try_options" width="100%" height="250" src="about:blank" data-live-path="/en-US/docs/Web/CSS/position-try-fallbacks/" data-live-id="predefined_try_options" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Predefined try options sample</a></div>
 <p>Try scrolling so the anchor nears the edges:</p>
 <ul>
 <li>If you move the anchor near the top of the viewport, you will see the positioned element flip to the bottom-left of the anchor to avoid overflowing.</li>
@@ -217,7 +217,7 @@ In some situations you might want to just hide overflowing positioned elements, 
 }
 </code></pre></div>
 <h4 id="result_2">Result</h4>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Combining multiple values into one option sample" id="frame_combining_multiple_values_into_one_option" width="100%" height="250" src="about:blank" data-live-path="/en-US/docs/Web/CSS/position-try-fallbacks/" data-live-id="combining_multiple_values_into_one_option" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Combining multiple values into one option sample</a></div>
 <p>The third position-try fallback option means that the browser will try <code>flip-block</code> then <code>flip-inline</code> to avoid overflow, and if those fallbacks fail, it will combine the two, flipping the element's position in the block and inline directions at the same time. Now when you scroll the anchor towards the top <em>and</em> left edges of the viewport, the positioned element will flip over to the bottom-right.</p></div></section><section aria-labelledby="position-area_try_fallback_options"><h3 id="position-area_try_fallback_options"><a href="#position-area_try_fallback_options"><code>position-area</code> try fallback options</a></h3><div class="section-content"><p>This example shows some <code>position-area</code> position-try fallback options in action.</p>
 <h4 id="html_and_css_2">HTML and CSS</h4>
 <p>All of the HTML and CSS in this demo is the same, except for the positioned element code. In this case, our position try fallback options are all <code>position-area</code> values — <code>top</code>, <code>top right</code>, <code>right</code>, <code>bottom right</code>, <code>bottom</code>, <code>bottom left</code>, and <code>left</code>.</p>
@@ -275,7 +275,7 @@ In some situations you might want to just hide overflowing positioned elements, 
 }
 </code></pre></div>
 <h4 id="result_3">Result</h4>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="`position-area` try fallback options sample" id="frame_position-area_try_fallback_options" width="100%" height="250" src="about:blank" data-live-path="/en-US/docs/Web/CSS/position-try-fallbacks/" data-live-id="position-area_try_fallback_options" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">`position-area` try fallback options sample</a></div>
 <p>Scroll the page and check out the effect of these position-try fallback options as the anchor nears the edge of the viewport.</p></div></section><section aria-labelledby="custom_try_option_examples"><h3 id="custom_try_option_examples"><a href="#custom_try_option_examples">Custom try option examples</a></h3><div class="section-content"><p>See the <a href="%40position-try.html"><code>@position-try</code></a> reference page.</p></div></section><h2 id="specifications"><a href="#specifications">Specifications</a></h2><table class="standard-table"><thead><tr><th scope="col">Specification</th></tr></thead><tbody><tr><td><a href="https://drafts.csswg.org/css-anchor-position-1/#position-try-fallbacks">CSS Anchor Positioning<!-- --> <br><small># <!-- -->position-try-fallbacks</small></a></td></tr></tbody></table><h2 id="browser_compatibility"><a href="#browser_compatibility">Browser compatibility</a></h2><p>BCD tables only load in the browser<noscript> <!-- -->with JavaScript enabled. Enable JavaScript to view data.</noscript></p><section aria-labelledby="see_also"><h2 id="see_also"><a href="#see_also">See also</a></h2><div class="section-content"><ul>
 <li><a href="position-try.html"><code>position-try</code></a></li>
 <li><a href="position-try-order.html"><code>position-try-order</code></a></li>

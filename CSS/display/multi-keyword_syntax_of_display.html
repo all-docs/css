@@ -22,7 +22,7 @@ Multi-keyword syntax is also referred to as "two-value syntax" or "multi-value s
   justify-content: space-between;
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="span-flex sample" id="frame_span-flex" src="about:blank" data-live-path="/en-US/docs/Web/CSS/display/multi-keyword_syntax_of_display/" data-live-id="span-flex" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">span-flex sample</a></div>
 <p>It's also possible to create inline flex containers. If you use the single value <code>inline-flex</code> you will have an inline-level box with flex children. The children behave in the same way as the flex children of a block-level container. The only thing that has changed is that the parent is now an inline-level box. It therefore behaves like other inline-level things, and doesn't take up the full width (or size in the inline dimension) that a block-level box does. This means that some following text could come up alongside the flex container.</p>
 <div class="code-example"><div class="example-header"><span class="language-name">html</span></div><pre class="brush: html live-sample___inline-flex notranslate"><code>&lt;div class="flex"&gt;
   &lt;div&gt;One&lt;/div&gt;
@@ -44,7 +44,7 @@ Text following the flex container.
   display: inline-flex;
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="inline-flex sample" id="frame_inline-flex" src="about:blank" data-live-path="/en-US/docs/Web/CSS/display/multi-keyword_syntax_of_display/" data-live-id="inline-flex" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">inline-flex sample</a></div>
 <p>The same is true when working with grid layout. Using <code>display: grid</code> will give you a block-level box, which creates a grid formatting context for the direct children. Using <code>display: inline-grid</code> will create an inline-level box, which creates a grid formatting context for the children.</p></div></section><section aria-labelledby="using_the_multi-keyword_syntax"><h2 id="using_the_multi-keyword_syntax"><a href="#using_the_multi-keyword_syntax">Using the multi-keyword syntax</a></h2><div class="section-content"><p>As you can see from the above explanation, the <code>display</code> property has considerable powers. In addition to indicating whether something is block-level or inline-level in relationship to other boxes on the page, it also indicates the formatting context inside the box it is applied to. To better describe this behavior, the <code>display</code> property allows for two values — an outer and inner value — to be set on it. The original single-value syntax is also valid.</p>
 <p>This means that instead of setting <code>display: flex</code> to create a block-level box with flex children, we use <code>display: block flex</code>. Instead of <code>display: inline-flex</code> to create an inline-level box with flex children, we use <code>display: inline flex</code>. The example below demonstrates these values.</p>
 <div class="code-example"><div class="example-header"><span class="language-name">html</span></div><pre class="brush: html live-sample___multi-keyword-flex notranslate"><code>&lt;h1&gt;Multiple values for display&lt;/h1&gt;
@@ -86,7 +86,7 @@ The second example is an inline element with flex children.
   display: inline flex;
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="multi-keyword-flex sample" id="frame_multi-keyword-flex" height="300px" src="about:blank" data-live-path="/en-US/docs/Web/CSS/display/multi-keyword_syntax_of_display/" data-live-id="multi-keyword-flex" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">multi-keyword-flex sample</a></div>
 <p>There are mappings for all of the existing values of <code>display</code>; the most common ones are listed in the table below. To see a full list take a look at the table found in the <a href="https://drafts.csswg.org/css-display/#display-value-summary" class="external" target="_blank"><code>display</code> property specification</a>.</p>
 <figure class="table-container"><table>
 <thead>
@@ -196,7 +196,7 @@ p {
 &lt;/div&gt;
 &lt;p id="sibling"&gt;The #sibling paragraph (sibling of #parent).&lt;/p&gt;
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="display block flow-root and display inline flow-root sample" id="frame_display_block_flow-root_and_display_inline_flow-root" width="90%" height="380" src="about:blank" data-live-path="/en-US/docs/Web/CSS/display/multi-keyword_syntax_of_display/" data-live-id="display_block_flow-root_and_display_inline_flow-root" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">display block flow-root and display inline flow-root sample</a></div>
 <p>The <code>flow-root</code> value makes sense if you think about block and inline layout, which is sometimes called <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Introduction#normal_layout_flow">normal flow</a>. Our HTML page creates a new formatting context (floats and margins cannot extend out from the boundaries) and our content lays out in normal flow, using block and inline layout, unless we change the value of <code>display</code> to use some other formatting context. Creating a grid or flex container also creates a new formatting context (a grid or flex formatting context, respectively.) These also contain everything inside them. However, if you want to contain floats and margins but continue using block and inline layout, you can create a new flow root, and start over with block and inline layout. From that point downwards everything is contained inside the new flow root.</p>
 <p>This is why <code>display: flow-root</code> can be written using the multi-keyword syntax <code>display: block flow-root</code>. You are creating a block formatting context, with a block-level box and children participating in normal flow. What about the matched pair <code>display: inline flow-root</code>? This is the current way of describing <code>display: inline-block</code>.</p>
 <p>The value <code>display: inline-block</code> has been around since the early days of CSS. The reason we tend to use it is to allow padding to push inline items away from an element, when creating navigation items for example, or when wanting to add a background with padding to an inline element as in the example below.</p>
@@ -220,7 +220,7 @@ p {
   display: inline-block;
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="inline-block sample" id="frame_inline-block" height="200px" src="about:blank" data-live-path="/en-US/docs/Web/CSS/display/multi-keyword_syntax_of_display/" data-live-id="inline-block" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">inline-block sample</a></div>
 <p>An element with <code>display: inline-block</code> however, will also contain floats. It contains everything inside the inline-level box. Therefore <code>display: inline-block</code> does exactly what <code>display: flow-root</code> does, but with an inline-level, rather than a block-level box. The two-value syntax accurately describes what is happening with this value. In the example above, you can change <code>display: inline-block</code> to <code>display: inline flow-root</code> and get the same result.</p></div></section><section aria-labelledby="what_about_the_old_values_of_display"><h2 id="what_about_the_old_values_of_display"><a href="#what_about_the_old_values_of_display">What about the old values of display?</a></h2><div class="section-content"><p>The single values of <code>display</code> are described in the specification as legacy values, and currently you gain no benefit from using the multi-keyword versions, as there is a direct mapping for each multi-keyword version to a legacy version, as demonstrated in the table above.</p>
 <p>To deal with single values of <code>display</code> <a href="https://www.w3.org/TR/css-display-3/#outer-role" class="external" target="_blank">the specification</a> explains what to do if only the outer value of <code>block</code> or <code>inline</code> is used:</p>
 <blockquote>

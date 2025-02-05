@@ -70,7 +70,7 @@ shape-outside: circle(50%) margin-box;
   padding: 20px;
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="inset sample" id="frame_inset" height="250px" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_shapes/Basic_shapes/" data-live-id="inset" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">inset sample</a></div>
 <p>You can also add a box value as an alternative reference box. In the example below, try changing the reference box from <code>margin-box</code> to <code>border-box</code>, <code>padding-box</code>, or <code>content-box</code> to see how the reference box used as the starting point changes before offsets are calculated.</p>
 <div class="code-example"><pre class="brush: html hidden live-sample___inset-box notranslate"><code>&lt;div class="box"&gt;
   &lt;div class="shape"&gt;&lt;/div&gt;
@@ -103,7 +103,7 @@ shape-outside: circle(50%) margin-box;
   padding: 20px;
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="inset-box sample" id="frame_inset-box" height="250px" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_shapes/Basic_shapes/" data-live-id="inset-box" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">inset-box sample</a></div>
 <p>You can also create rectangles based on distances from the top and left edges of the reference box with the <a href="../basic-shape/rect.html"><code>rect()</code></a> function, or by width and height with the <a href="../basic-shape/xywh.html"><code>xywh()</code></a> function; both of these also support optional rounded corners.</p></div></section><section aria-labelledby="circle"><h2 id="circle"><a href="#circle">circle()</a></h2><div class="section-content"><p>The <a href="../basic-shape/circle.html"><code>circle()</code></a> value for <code>shape-outside</code> can accept two possible arguments: a <code>&lt;shape-radius&gt;</code> defining the size and the <code>&lt;position&gt;</code> defining its location.</p>
 <p>The <code>circle()</code> and <code>ellipse()</code> <code>shape-outside</code> values both accept <a href="../basic-shape.html#shape-radius"><code>&lt;shape-radius&gt;</code></a> as an argument. This can be a <a href="../length.html"><code>&lt;length&gt;</code></a>, a <a href="../percentage.html"><code>&lt;percentage&gt;</code></a>, or one of the keywords <code>closest-side</code> or <code>farthest-side</code>.</p>
 <p>The <code>closest-side</code> keyword value uses the length from the center of the shape to the closest side of the reference box to create the radius length. The <code>farthest-side</code> keyword value uses the length from the center of the shape to the farthest side of the reference box.</p>
@@ -136,7 +136,7 @@ img {
   margin: 20px;
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="circle sample" id="frame_circle" height="250px" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_shapes/Basic_shapes/" data-live-id="circle" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">circle sample</a></div>
 <p>Play with increasing or decreasing the size of the circle by changing the size of the radius, moving the circle around with the position value, or setting a reference box as we did for <code>inset()</code>.</p>
 <p>The below example combines generated content with a <code>circle()</code> function that uses the keywords <code>top left</code> for position. This creates a quarter circle shape in the top left corner of the page for text to flow around.</p>
 <div class="code-example"><div class="example-header"><span class="language-name">html</span></div><pre class="brush: html live-sample___circle-generated notranslate"><code>&lt;div class="box"&gt;
@@ -165,7 +165,7 @@ img {
   shape-outside: circle(50% at top left);
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="circle-generated sample" id="frame_circle-generated" height="300px" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_shapes/Basic_shapes/" data-live-id="circle-generated" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div></div></section><section aria-labelledby="the_shape_will_be_clipped_by_the_margin_box"><h3 id="the_shape_will_be_clipped_by_the_margin_box"><a href="#the_shape_will_be_clipped_by_the_margin_box">The shape will be clipped by the margin box</a></h3><div class="section-content"><p>As noted in <a href="#the_reference_box">reference boxes</a> above, the <code>margin-box</code> will clip the shape. You can see this by moving the center of our circle towards the content by setting the position to <code>60%</code>. The center of the circle will be nearer to the content and the circle will extend past the margin-box. This means that the extension becomes clipped and squared off.</p>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">circle-generated sample</a></div></div></section><section aria-labelledby="the_shape_will_be_clipped_by_the_margin_box"><h3 id="the_shape_will_be_clipped_by_the_margin_box"><a href="#the_shape_will_be_clipped_by_the_margin_box">The shape will be clipped by the margin box</a></h3><div class="section-content"><p>As noted in <a href="#the_reference_box">reference boxes</a> above, the <code>margin-box</code> will clip the shape. You can see this by moving the center of our circle towards the content by setting the position to <code>60%</code>. The center of the circle will be nearer to the content and the circle will extend past the margin-box. This means that the extension becomes clipped and squared off.</p>
 <div class="code-example"><div class="example-header"><span class="language-name">css</span></div><pre class="brush: css notranslate"><code>img {
   float: left;
   shape-outside: circle(50% at 60%);
@@ -199,7 +199,7 @@ img {
   height: 200px;
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="ellipse sample" id="frame_ellipse" height="300px" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_shapes/Basic_shapes/" data-live-id="ellipse" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">ellipse sample</a></div>
 <p>The keyword values of <code>closest-side</code> and <code>farthest-side</code> are useful in creating a quick ellipse based on the size of the floated element reference box.</p>
 <div class="code-example"><pre class="brush: html hidden live-sample___ellipse-keywords notranslate"><code>&lt;div class="box"&gt;
   &lt;div class="shape"&gt;&lt;/div&gt;
@@ -228,7 +228,7 @@ img {
   height: 140px;
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="ellipse-keywords sample" id="frame_ellipse-keywords" height="250px" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_shapes/Basic_shapes/" data-live-id="ellipse-keywords" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div></div></section><section aria-labelledby="polygon"><h2 id="polygon"><a href="#polygon">polygon()</a></h2><div class="section-content"><p>The <a href="../basic-shape/polygon.html"><code>polygon()</code></a> function is more complex, enabling the creation of multiple-sided polygon shapes. This shape accepts three or more pairs of values (a polygon must at least draw a triangle). Each space-separated pair of values is separated with a comma and represents the coordinates of a single vertex drawn relative to the reference box. Each pair of coordinates defines an edge of the polygon, with the final edge defined by the first and last set of coordinates.</p>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">ellipse-keywords sample</a></div></div></section><section aria-labelledby="polygon"><h2 id="polygon"><a href="#polygon">polygon()</a></h2><div class="section-content"><p>The <a href="../basic-shape/polygon.html"><code>polygon()</code></a> function is more complex, enabling the creation of multiple-sided polygon shapes. This shape accepts three or more pairs of values (a polygon must at least draw a triangle). Each space-separated pair of values is separated with a comma and represents the coordinates of a single vertex drawn relative to the reference box. Each pair of coordinates defines an edge of the polygon, with the final edge defined by the first and last set of coordinates.</p>
 <p>The example below creates a shape for text to follow using the <code>polygon()</code> function. Try changing the coordinate values to see how the shape changes.</p>
 <div class="code-example"><pre class="brush: html hidden live-sample___polygon notranslate"><code>&lt;div class="box"&gt;
   &lt;div class="shape"&gt;&lt;/div&gt;
@@ -262,7 +262,7 @@ img {
   height: 200px;
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="polygon sample" id="frame_polygon" height="250px" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_shapes/Basic_shapes/" data-live-id="polygon" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">polygon sample</a></div>
 <p>To create even more complex shapes, you can define the outline of any shape with the <a href="../basic-shape/path.html"><code>path()</code></a> or <a href="../basic-shape/shape.html"><code>shape()</code></a> functions.</p>
 <p>The <code>inset()</code>, <code>circle()</code>, <code>ellipse()</code>, and <code>polygon()</code> are inspectable and editable using the Firefox Developer Tools Shape Inspector. The screenshot below shows the shape highlighted in the tool.</p>
 <p><img src="Basic_shapes/shapes-polygon.png" alt="The polygon basic shape, highlighted with the Shapes Inspector." width="1524" height="540" loading="lazy"></p>

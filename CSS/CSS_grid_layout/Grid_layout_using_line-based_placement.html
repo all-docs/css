@@ -33,7 +33,7 @@
   &lt;div class="box4"&gt;Four&lt;/div&gt;
 &lt;/div&gt;
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="A basic example sample" id="frame_a_basic_example" width="300" height="330" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_grid_layout/Grid_layout_using_line-based_placement/" data-live-id="a_basic_example" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div></div></section><section aria-labelledby="positioning_items_by_line_number"><h2 id="positioning_items_by_line_number"><a href="#positioning_items_by_line_number">Positioning items by line number</a></h2><div class="section-content"><p>We can use line-based placement to control where these items sit on the grid. We would like the first item to start on the far left of the grid and span a single column track. It should also start on the first row line, at the top of the grid and span to the fourth row line.</p>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">A basic example sample</a></div></div></section><section aria-labelledby="positioning_items_by_line_number"><h2 id="positioning_items_by_line_number"><a href="#positioning_items_by_line_number">Positioning items by line number</a></h2><div class="section-content"><p>We can use line-based placement to control where these items sit on the grid. We would like the first item to start on the far left of the grid and span a single column track. It should also start on the first row line, at the top of the grid and span to the fourth row line.</p>
 <div class="code-example"><div class="example-header"><span class="language-name">css</span></div><pre class="brush: css notranslate"><code>.box1 {
   grid-column-start: 1;
   grid-column-end: 2;
@@ -96,7 +96,7 @@
   grid-row-end: 4;
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Positioning items by line number sample" id="frame_positioning_items_by_line_number" width="300" height="330" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_grid_layout/Grid_layout_using_line-based_placement/" data-live-id="positioning_items_by_line_number" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div></div></section><section aria-labelledby="the_grid-column_and_grid-row_shorthands"><h2 id="the_grid-column_and_grid-row_shorthands"><a href="#the_grid-column_and_grid-row_shorthands">The <code>grid-column</code> and <code>grid-row</code> shorthands</a></h2><div class="section-content"><p>We have quite a lot of code here to position each item. It should come as no surprise to know there is a <a href="../Shorthand_properties.html">shorthand</a>. The <a href="../grid-column-start.html"><code>grid-column-start</code></a> and <a href="../grid-column-end.html"><code>grid-column-end</code></a> properties can be combined into <a href="../grid-column.html"><code>grid-column</code></a>, <a href="../grid-row-start.html"><code>grid-row-start</code></a> and <a href="../grid-row-end.html"><code>grid-row-end</code></a> into <a href="../grid-row.html"><code>grid-row</code></a>.</p>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Positioning items by line number sample</a></div></div></section><section aria-labelledby="the_grid-column_and_grid-row_shorthands"><h2 id="the_grid-column_and_grid-row_shorthands"><a href="#the_grid-column_and_grid-row_shorthands">The <code>grid-column</code> and <code>grid-row</code> shorthands</a></h2><div class="section-content"><p>We have quite a lot of code here to position each item. It should come as no surprise to know there is a <a href="../Shorthand_properties.html">shorthand</a>. The <a href="../grid-column-start.html"><code>grid-column-start</code></a> and <a href="../grid-column-end.html"><code>grid-column-end</code></a> properties can be combined into <a href="../grid-column.html"><code>grid-column</code></a>, <a href="../grid-row-start.html"><code>grid-row-start</code></a> and <a href="../grid-row-end.html"><code>grid-row-end</code></a> into <a href="../grid-row.html"><code>grid-row</code></a>.</p>
 <div class="code-example"><pre class="brush: css hidden notranslate"><code>* {
   box-sizing: border-box;
 }
@@ -142,7 +142,7 @@
   grid-row: 3 / 4;
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="The grid-column and grid-row shorthands sample" id="frame_the_grid-column_and_grid-row_shorthands" width="300" height="330" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_grid_layout/Grid_layout_using_line-based_placement/" data-live-id="the_grid-column_and_grid-row_shorthands" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div></div></section><section aria-labelledby="default_spans"><h2 id="default_spans"><a href="#default_spans">Default spans</a></h2><div class="section-content"><p>In the above examples, we specified every end row and column line, in order to demonstrate the properties, however in practice if an item only spans one track you can omit the <code>grid-column-end</code> or <code>grid-row-end</code> value. Grid defaults to spanning one track.</p></div></section><section aria-labelledby="default_spans_with_longhand_placement"><h3 id="default_spans_with_longhand_placement"><a href="#default_spans_with_longhand_placement">Default spans with longhand placement</a></h3><div class="section-content"><p>This means that our initial, long-hand, example would look like this:</p>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">The grid-column and grid-row shorthands sample</a></div></div></section><section aria-labelledby="default_spans"><h2 id="default_spans"><a href="#default_spans">Default spans</a></h2><div class="section-content"><p>In the above examples, we specified every end row and column line, in order to demonstrate the properties, however in practice if an item only spans one track you can omit the <code>grid-column-end</code> or <code>grid-row-end</code> value. Grid defaults to spanning one track.</p></div></section><section aria-labelledby="default_spans_with_longhand_placement"><h3 id="default_spans_with_longhand_placement"><a href="#default_spans_with_longhand_placement">Default spans with longhand placement</a></h3><div class="section-content"><p>This means that our initial, long-hand, example would look like this:</p>
 <div class="code-example"><pre class="brush: css hidden notranslate"><code>* {
   box-sizing: border-box;
 }
@@ -191,7 +191,7 @@
   grid-row-start: 3;
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Default spans with longhand placement sample" id="frame_default_spans_with_longhand_placement" width="300" height="330" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_grid_layout/Grid_layout_using_line-based_placement/" data-live-id="default_spans_with_longhand_placement" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div></div></section><section aria-labelledby="default_spans_with_shorthand_placement"><h3 id="default_spans_with_shorthand_placement"><a href="#default_spans_with_shorthand_placement">Default spans with shorthand placement</a></h3><div class="section-content"><p>Our shorthand would look like the following code, with no forward slash and second value for the items spanning one track only.</p>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Default spans with longhand placement sample</a></div></div></section><section aria-labelledby="default_spans_with_shorthand_placement"><h3 id="default_spans_with_shorthand_placement"><a href="#default_spans_with_shorthand_placement">Default spans with shorthand placement</a></h3><div class="section-content"><p>Our shorthand would look like the following code, with no forward slash and second value for the items spanning one track only.</p>
 <div class="code-example"><pre class="brush: css hidden notranslate"><code>* {
   box-sizing: border-box;
 }
@@ -237,7 +237,7 @@
   grid-row: 3;
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Default spans with shorthand placement sample" id="frame_default_spans_with_shorthand_placement" width="300" height="330" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_grid_layout/Grid_layout_using_line-based_placement/" data-live-id="default_spans_with_shorthand_placement" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div></div></section><section aria-labelledby="the_grid-area_property"><h2 id="the_grid-area_property"><a href="#the_grid-area_property">The <code>grid-area</code> property</a></h2><div class="section-content"><p>We can take things a step further and define each area with a single property – <a href="../grid-area.html"><code>grid-area</code></a>. The order of the values for grid-area are as follows.</p>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Default spans with shorthand placement sample</a></div></div></section><section aria-labelledby="the_grid-area_property"><h2 id="the_grid-area_property"><a href="#the_grid-area_property">The <code>grid-area</code> property</a></h2><div class="section-content"><p>We can take things a step further and define each area with a single property – <a href="../grid-area.html"><code>grid-area</code></a>. The order of the values for grid-area are as follows.</p>
 <ul>
 <li>grid-row-start</li>
 <li>grid-column-start</li>
@@ -285,7 +285,7 @@
   grid-area: 3 / 2 / 4 / 4;
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="The grid-area property sample" id="frame_the_grid-area_property" width="300" height="330" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_grid_layout/Grid_layout_using_line-based_placement/" data-live-id="the_grid-area_property" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">The grid-area property sample</a></div>
 <p>This order of values for <code>grid-area</code> can seem a little strange, it is the opposite of the direction in which we specify margins and padding as a shorthand for example. It may help to realize that this is due to grid using the flow-relative directions defined in the CSS Writing Modes specification. We will explore how grids work with writing modes in a later article however we have the concept of four flow-relative directions:</p>
 <ul>
 <li>block-start</li>
@@ -349,7 +349,7 @@
   grid-row-end: -4;
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Counting backwards sample" id="frame_counting_backwards" width="300" height="330" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_grid_layout/Grid_layout_using_line-based_placement/" data-live-id="counting_backwards" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div></div></section><section aria-labelledby="stretching_an_item_across_the_grid"><h3 id="stretching_an_item_across_the_grid"><a href="#stretching_an_item_across_the_grid">Stretching an item across the grid</a></h3><div class="section-content"><p>Being able to address the start and end lines of the grid is useful as you can then stretch an item right across the grid with:</p>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Counting backwards sample</a></div></div></section><section aria-labelledby="stretching_an_item_across_the_grid"><h3 id="stretching_an_item_across_the_grid"><a href="#stretching_an_item_across_the_grid">Stretching an item across the grid</a></h3><div class="section-content"><p>Being able to address the start and end lines of the grid is useful as you can then stretch an item right across the grid with:</p>
 <div class="code-example"><div class="example-header"><span class="language-name">css</span></div><pre class="brush: css notranslate"><code>.item {
   grid-column: 1 / -1;
 }
@@ -412,7 +412,7 @@ When grid first shipped in browsers the <a href="../column-gap.html"><code>colum
   row-gap: 1em;
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Gutters or Alleys sample" id="frame_gutters_or_alleys" width="300" height="350" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_grid_layout/Grid_layout_using_line-based_placement/" data-live-id="gutters_or_alleys" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div></div></section><section aria-labelledby="the_gap_shorthand"><h3 id="the_gap_shorthand"><a href="#the_gap_shorthand">The gap shorthand</a></h3><div class="section-content"><p>The two properties can also be expressed as a shorthand, <a href="../gap.html"><code>gap</code></a>. If you only give one value for <code>gap</code> it will apply to both column and row gaps. If you specify two values, the first is used for <code>row-gap</code> and the second for <code>column-gap</code>.</p>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Gutters or Alleys sample</a></div></div></section><section aria-labelledby="the_gap_shorthand"><h3 id="the_gap_shorthand"><a href="#the_gap_shorthand">The gap shorthand</a></h3><div class="section-content"><p>The two properties can also be expressed as a shorthand, <a href="../gap.html"><code>gap</code></a>. If you only give one value for <code>gap</code> it will apply to both column and row gaps. If you specify two values, the first is used for <code>row-gap</code> and the second for <code>column-gap</code>.</p>
 <div class="code-example"><div class="example-header"><span class="language-name">css</span></div><pre class="brush: css notranslate"><code>.wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -466,7 +466,7 @@ When grid first shipped in browsers the <a href="../column-gap.html"><code>colum
   grid-row: 3;
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Using the span keyword sample" id="frame_using_the_span_keyword" width="300" height="330" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_grid_layout/Grid_layout_using_line-based_placement/" data-live-id="using_the_span_keyword" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Using the span keyword sample</a></div>
 <p>You can also use the <code>span</code> keyword in the value of <code>grid-row-start</code>/<code>grid-row-end</code> and <code>grid-column-start/grid-column-end</code>. The following two examples will create the same grid area. In the first we set the start row line, then the end line we specify that we want the area to cover 3 tracks. The area will start at line 1 and end 3 lines from line 1; that is, the area will end at line 4.</p>
 <div class="code-example"><div class="example-header"><span class="language-name">css</span></div><pre class="brush: css notranslate"><code>.box1 {
   grid-column-start: 1;

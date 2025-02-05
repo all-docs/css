@@ -91,7 +91,7 @@
   align-self: center;
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="grid-align-items sample" id="frame_grid-align-items" height="200px" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_box_alignment/Box_alignment/" data-live-id="grid-align-items" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">grid-align-items sample</a></div>
 <h4 id="flexbox_alignment_example">Flexbox Alignment Example</h4>
 <p>In this example, three flex items are aligned on the main axis using <code>justify-content</code> and on the cross axis using <code>align-items</code>. The first item overrides the <code>align-items</code> set on the group by setting <code>align-self</code> to <code>center</code>.</p>
 <div class="code-example"><div class="example-header"><span class="language-name">html</span></div><pre class="brush: html live-sample___flex-align-items notranslate"><code>&lt;div class="box"&gt;
@@ -125,7 +125,7 @@
   align-self: center;
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="flex-align-items sample" id="frame_flex-align-items" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_box_alignment/Box_alignment/" data-live-id="flex-align-items" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div></div></section><section aria-labelledby="overflow_alignment"><h2 id="overflow_alignment"><a href="#overflow_alignment">Overflow alignment</a></h2><div class="section-content"><p>The <a href="../overflow-position.html"><code>&lt;overflow-position&gt;</code></a> keywords <code>safe</code> and <code>unsafe</code> help define behavior when an alignment subject is larger than the alignment container. The <code>safe</code> keyword will align to <code>start</code> in the case of a specified alignment causing an overflow, the aim being to avoid "data loss" where part of the item is outside the boundaries of the alignment container and can't be scrolled to.</p>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">flex-align-items sample</a></div></div></section><section aria-labelledby="overflow_alignment"><h2 id="overflow_alignment"><a href="#overflow_alignment">Overflow alignment</a></h2><div class="section-content"><p>The <a href="../overflow-position.html"><code>&lt;overflow-position&gt;</code></a> keywords <code>safe</code> and <code>unsafe</code> help define behavior when an alignment subject is larger than the alignment container. The <code>safe</code> keyword will align to <code>start</code> in the case of a specified alignment causing an overflow, the aim being to avoid "data loss" where part of the item is outside the boundaries of the alignment container and can't be scrolled to.</p>
 <p>If you specify <code>unsafe</code> then the alignment will be honoured even if it would cause such data loss.</p></div></section><section aria-labelledby="gaps_between_boxes"><h2 id="gaps_between_boxes"><a href="#gaps_between_boxes">Gaps between boxes</a></h2><div class="section-content"><p>The box alignment specification also includes the <code>gap</code>, <code>row-gap</code>, and <code>column-gap</code> properties. These properties enable the setting of a consistent gap between items in a row or column, in any layout method which has items arranged in this way.</p>
 <p>The <code>gap</code> property is a shorthand for <code>row-gap</code> and <code>column-gap</code>, which allows us to set these properties at once:</p>
 <ul>
@@ -168,7 +168,7 @@
   align-self: center;
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="grid-gap sample" id="frame_grid-gap" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_box_alignment/Box_alignment/" data-live-id="grid-gap" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">grid-gap sample</a></div>
 <p>Early grid implementations included <code>gap</code> properties prefixed with <code>grid-</code>. All browsers support the unprefixed properties, though you may see the following properties in a code-base: <a href="../row-gap.html"><code>grid-row-gap</code></a>, <a href="../column-gap.html"><code>grid-column-gap</code></a>, and <a href="../gap.html"><code>grid-gap</code></a>. The prefixed versions are aliases of the unprefixed ones.</p>
 <p>Be aware that other things may increase the visual gap displayed, for example using the space distribution keywords or adding margins to items.</p></div></section><section aria-labelledby="box-alignment_by_layout_type"><h2 id="box-alignment_by_layout_type"><a href="#box-alignment_by_layout_type">Box-alignment by layout type</a></h2><div class="section-content"><p>As the CSS box alignment properties are implemented differently depending on the specification they interact with, refer to the following guides for details of how to use the alignment properties with each layout type:</p>
 <ul>

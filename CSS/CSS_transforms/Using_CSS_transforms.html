@@ -21,14 +21,14 @@ Only transformable elements can be <code>transform</code>ed; that is, all elemen
   src="logo.png"
   alt="MDN Logo" /&gt;
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Rotating sample" id="frame_rotating" width="auto" height="240" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_transforms/Using_CSS_transforms/" data-live-id="rotating" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div></div></section><section aria-labelledby="skewing_and_translating"><h3 id="skewing_and_translating"><a href="#skewing_and_translating">Skewing and translating</a></h3><div class="section-content"><p>Here is the MDN logo, skewed by 10 degrees and translated by 150 pixels on the X-axis.</p>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Rotating sample</a></div></div></section><section aria-labelledby="skewing_and_translating"><h3 id="skewing_and_translating"><a href="#skewing_and_translating">Skewing and translating</a></h3><div class="section-content"><p>Here is the MDN logo, skewed by 10 degrees and translated by 150 pixels on the X-axis.</p>
 <div class="code-example"><div class="example-header"><span class="language-name">html</span></div><pre class="brush: html notranslate"><code>&lt;img
   style="transform: skewX(10deg) translateX(150px);
             transform-origin: bottom left;"
   src="logo.png"
   alt="MDN logo" /&gt;
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Skewing and translating sample" id="frame_skewing_and_translating" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_transforms/Using_CSS_transforms/" data-live-id="skewing_and_translating" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div></div></section><section aria-labelledby="3d_specific_css_properties"><h2 id="3d_specific_css_properties"><a href="#3d_specific_css_properties">3D specific CSS properties</a></h2><div class="section-content"><p>Performing CSS transformations in 3D space is a bit more complex. You have to start by configuring the 3D space by giving it a perspective, then you have to configure how your 2D elements will behave in that space.</p></div></section><section aria-labelledby="perspective"><h3 id="perspective"><a href="#perspective">Perspective</a></h3><div class="section-content"><p>The first element to set is the <a href="../perspective.html"><code>perspective</code></a>. The perspective is what gives us the 3D impression. The farther from the viewer the elements are, the smaller they are.</p>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Skewing and translating sample</a></div></div></section><section aria-labelledby="3d_specific_css_properties"><h2 id="3d_specific_css_properties"><a href="#3d_specific_css_properties">3D specific CSS properties</a></h2><div class="section-content"><p>Performing CSS transformations in 3D space is a bit more complex. You have to start by configuring the 3D space by giving it a perspective, then you have to configure how your 2D elements will behave in that space.</p></div></section><section aria-labelledby="perspective"><h3 id="perspective"><a href="#perspective">Perspective</a></h3><div class="section-content"><p>The first element to set is the <a href="../perspective.html"><code>perspective</code></a>. The perspective is what gives us the 3D impression. The farther from the viewer the elements are, the smaller they are.</p>
 <h4 id="setting_perspective">Setting perspective</h4>
 <p>This example shows a cube with the perspective set at different positions. How quick the cube shrinks is defined by the <a href="../perspective.html"><code>perspective</code></a> property. The smaller its value is, the deeper the perspective is.</p>
 <h5 id="html">HTML</h5>
@@ -189,7 +189,7 @@ td {
 }
 </code></pre></div>
 <h5 id="result">Result</h5>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Setting perspective sample" id="frame_setting_perspective" width="660" height="700" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_transforms/Using_CSS_transforms/" data-live-id="setting_perspective" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Setting perspective sample</a></div>
 <p>The second element to configure is the position of the viewer, with the <a href="../perspective-origin.html"><code>perspective-origin</code></a> property. By default the perspective is centered on the viewer, which is not always adequate.</p>
 <h4 id="changing_the_perspective_origin">Changing the perspective origin</h4>
 <p>This example shows cubes with popular <code>perspective-origin</code> values.</p>
@@ -470,7 +470,7 @@ section {
 }
 </code></pre></div>
 <h5 id="result_2">Result</h5>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Changing the perspective origin sample" id="frame_changing_the_perspective_origin" width="100%" height="700" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_transforms/Using_CSS_transforms/" data-live-id="changing_the_perspective_origin" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Changing the perspective origin sample</a></div>
 <p>Once you have done this, you can work on the element in the 3D space.</p></div></section><section aria-labelledby="see_also"><h2 id="see_also"><a href="#see_also">See also</a></h2><div class="section-content"><ul>
 <li>The <a href="../transform.html">CSS <code>transform</code> property</a> and the <a href="../transform-function.html">CSS <code>&lt;transform-function&gt;</code> data types</a></li>
 <li>The individual transforms properties: <a href="../translate.html"><code>translate</code></a>, <a href="../rotate.html"><code>rotate</code></a>, and <a href="../scale.html"><code>scale</code></a> (There is no <code>skew</code> property)</li>

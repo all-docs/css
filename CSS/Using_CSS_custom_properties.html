@@ -94,7 +94,7 @@ textarea {
 }
 </code></pre></div>
 <p>This produces the following result:</p>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="First steps with custom properties sample" id="frame_first_steps_with_custom_properties" width="600" height="360" src="about:blank" data-live-path="/en-US/docs/Web/CSS/Using_CSS_custom_properties/" data-live-id="first_steps_with_custom_properties" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">First steps with custom properties sample</a></div>
 <p>There's an opportunity to use custom properties to replace repetitive values across these rules.
 After defining <code>--main-bg-color</code> in the <code>.container</code> scope and referencing its value in multiple places, the updated styles look like this:</p>
 <div class="code-example"><div class="example-header"><span class="language-name">css</span></div><pre class="brush: css notranslate"><code>/* Define --main-bg-color here */
@@ -196,7 +196,7 @@ p {
   --box-color: aquamarine;
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="dash-custom-property-inheritance sample" id="frame_dash-custom-property-inheritance" width="100%" height="280px" src="about:blank" data-live-path="/en-US/docs/Web/CSS/Using_CSS_custom_properties/" data-live-id="dash-custom-property-inheritance" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">dash-custom-property-inheritance sample</a></div>
 <p>The results of <code>var(--box-color)</code> depending on inheritance are as follows:</p>
 <ul>
 <li><code>class="one"</code>: <em>invalid value</em>, which is the default value of a custom property defined in this way</li>
@@ -248,7 +248,7 @@ The child element also uses <code>background-color: var(--box-color)</code>, and
 }
 </code></pre></div>
 <p>Because <code>inherits: false;</code> is set in the at-rule, and a value for the <code>--box-color</code> property is not declared within the <code>.child</code> scope, the initial value of <code>cornflowerblue</code> is used instead of <code>green</code> that would have been inherited from the parent:</p>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="at-property-inheritance sample" id="frame_at-property-inheritance" width="100%" height="250px" src="about:blank" data-live-path="/en-US/docs/Web/CSS/Using_CSS_custom_properties/" data-live-id="at-property-inheritance" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div></div></section><section aria-labelledby="custom_property_fallback_values"><h2 id="custom_property_fallback_values"><a href="#custom_property_fallback_values">Custom property fallback values</a></h2><div class="section-content"><p>You can define fallback values for custom properties using the <code>var()</code> function, and the <code>initial-value</code> of the <code>@property</code> at-rule.</p>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">at-property-inheritance sample</a></div></div></section><section aria-labelledby="custom_property_fallback_values"><h2 id="custom_property_fallback_values"><a href="#custom_property_fallback_values">Custom property fallback values</a></h2><div class="section-content"><p>You can define fallback values for custom properties using the <code>var()</code> function, and the <code>initial-value</code> of the <code>@property</code> at-rule.</p>
 <div class="notecard note">
 <p><strong>Note:</strong>
 Fallback values aren't used to fix compatibility issues for when CSS custom properties are not supported, as the fallback value won't help in this case.
@@ -328,7 +328,7 @@ Both <code>2rem</code> and <code>aqumarine</code> are invalid color values, so t
   &lt;p&gt;Three.&lt;/p&gt;
 &lt;/div&gt;
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="at-property-initial-value sample" id="frame_at-property-initial-value" width="100%" height="150px" src="about:blank" data-live-path="/en-US/docs/Web/CSS/Using_CSS_custom_properties/" data-live-id="at-property-initial-value" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div></div></section><section aria-labelledby="invalid_custom_properties"><h2 id="invalid_custom_properties"><a href="#invalid_custom_properties">Invalid custom properties</a></h2><div class="section-content"><p>Each CSS property can be assigned a defined <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Values_and_units">set of values</a>.
+<div class="code-example"><div class="example-header"></div><a href="about:blank">at-property-initial-value sample</a></div></div></section><section aria-labelledby="invalid_custom_properties"><h2 id="invalid_custom_properties"><a href="#invalid_custom_properties">Invalid custom properties</a></h2><div class="section-content"><p>Each CSS property can be assigned a defined <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Values_and_units">set of values</a>.
 If you try to assign a value to a property that is outside its set of valid values, it's considered <em>invalid</em>.</p>
 <p>When the browser encounters an invalid value for a regular CSS property (for example, a value of <code>16px</code> for the <a href="color.html"><code>color</code></a> property), it discards the declaration, and elements are assigned the values that they would have had if the declaration did not exist.
 In the following example, we see what happens when a regular CSS declaration is invalid; <code>color: 16px;</code> is discarded and the previous <code>color: blue</code> rule is applied instead:</p>
@@ -343,7 +343,7 @@ p {
   color: 16px;
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="invalid-property sample" id="frame_invalid-property" width="100" height="60" src="about:blank" data-live-path="/en-US/docs/Web/CSS/Using_CSS_custom_properties/" data-live-id="invalid-property" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">invalid-property sample</a></div>
 <p>However, when the values of custom properties are parsed, the browser doesn't yet know where they will be used, so it must consider nearly all values as <em>valid</em>.
 Unfortunately, these valid values can be used, via the <code>var()</code> functional notation, in a context where they might not make sense.
 Properties and custom variables can lead to invalid CSS statements, leading to the concept of <em>valid at computed time</em>.</p>
@@ -369,7 +369,7 @@ p {
   color: var(--text-color);
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="invalid-custom-property sample" id="frame_invalid-custom-property" width="100" height="60" src="about:blank" data-live-path="/en-US/docs/Web/CSS/Using_CSS_custom_properties/" data-live-id="invalid-custom-property" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">invalid-custom-property sample</a></div>
 <p>For such cases, the <code>@property</code> at-rule can prevent unexpected results by allowing to define the initial value of the property:</p>
 <div class="code-example"><div class="example-header"><span class="language-name">html</span></div><pre class="brush: html live-sample___invalid-custom-property-fallbacks notranslate"><code>&lt;p&gt;This paragraph is initially black.&lt;/p&gt;
 </code></pre></div>
@@ -391,7 +391,7 @@ p {
   color: var(--text-color);
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="invalid-custom-property-fallbacks sample" id="frame_invalid-custom-property-fallbacks" width="100" height="60" src="about:blank" data-live-path="/en-US/docs/Web/CSS/Using_CSS_custom_properties/" data-live-id="invalid-custom-property-fallbacks" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div></div></section><section aria-labelledby="values_in_javascript"><h2 id="values_in_javascript"><a href="#values_in_javascript">Values in JavaScript</a></h2><div class="section-content"><p>To use the values of custom properties in JavaScript, it is just like standard properties.</p>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">invalid-custom-property-fallbacks sample</a></div></div></section><section aria-labelledby="values_in_javascript"><h2 id="values_in_javascript"><a href="#values_in_javascript">Values in JavaScript</a></h2><div class="section-content"><p>To use the values of custom properties in JavaScript, it is just like standard properties.</p>
 <div class="code-example"><div class="example-header"><span class="language-name">js</span></div><pre class="brush: js notranslate"><code>// get variable from inline style
 element.style.getPropertyValue("--my-var");
 

@@ -44,7 +44,7 @@ img {
   &lt;/div&gt;
 &lt;/div&gt;
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Floats sample" id="frame_floats" width="500" height="200" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_grid_layout/Grid_layout_and_progressive_enhancement/" data-live-id="floats" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Floats sample</a></div>
 <p>The image below shows the media object in a non-supporting browser on the left, and a supporting one on the right:</p>
 <p><img src="Grid_layout_and_progressive_enhancement/10-float-simple-override.png" alt="A simple example of overriding a floated layout using grid. Both have the image aligned left. The text is vertically aligned at top in the float example and at the bottom in the grid example." width="1620" height="308" loading="lazy"></p></div></section><section aria-labelledby="using_feature_queries"><h3 id="using_feature_queries"><a href="#using_feature_queries">Using feature queries</a></h3><div class="section-content"><p>The above example is very simple, and we can get away without needing to write code that would be a problem to browsers that do not support grid, and legacy code is not an issue to our grid supporting browsers. However, things are not always so simple.</p>
 <h4 id="a_more_complex_example">A more complex example</h4>
@@ -109,7 +109,7 @@ img {
   &lt;/ul&gt;
 &lt;/div&gt;
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="A more complex example sample" id="frame_a_more_complex_example" width="550" height="450" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_grid_layout/Grid_layout_and_progressive_enhancement/" data-live-id="a_more_complex_example" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">A more complex example sample</a></div>
 <p>The example demonstrates the typical problem that we have with floated layouts: if additional content is added to any one card, the layout breaks.</p>
 <p><img src="Grid_layout_and_progressive_enhancement/10-floated-cards.png" alt="A floated cards layout demonstrating the problem caused by uneven content height. The top row has 3 cards. The fourth card is floated under the third card. Then a bottom row has contains the fifth and sixth cards. There is a largish empty space under the fourth card. " width="1200" height="1170" loading="lazy"></p>
 <p>As a concession for older browsers, I have set a <a href="../min-height.html"><code>min-height</code></a> on the items, and hope that my content editors won't add too much content and make a mess of the layout!</p>
@@ -200,7 +200,7 @@ img {
   &lt;/ul&gt;
 &lt;/div&gt;
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="A solution using feature queries sample" id="frame_a_solution_using_feature_queries" width="550" height="480" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_grid_layout/Grid_layout_and_progressive_enhancement/" data-live-id="a_solution_using_feature_queries" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div></div></section><section aria-labelledby="overwriting_other_values_of_display"><h2 id="overwriting_other_values_of_display"><a href="#overwriting_other_values_of_display">Overwriting other values of <code>display</code></a></h2><div class="section-content"><p>Due to the problems of creating grids of items using floats, many of us would use a different method to the floated method shown above to lay out a set of cards. Using <code>display: inline-block</code> is an alternate method.</p>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">A solution using feature queries sample</a></div></div></section><section aria-labelledby="overwriting_other_values_of_display"><h2 id="overwriting_other_values_of_display"><a href="#overwriting_other_values_of_display">Overwriting other values of <code>display</code></a></h2><div class="section-content"><p>Due to the problems of creating grids of items using floats, many of us would use a different method to the floated method shown above to lay out a set of cards. Using <code>display: inline-block</code> is an alternate method.</p>
 <p>Once again I can use feature queries to overwrite a layout that uses <code>display: inline-block</code>, and again I don't need to overwrite everything. An item that is set to <code>inline-block</code> becomes a grid item, and so the behavior of <code>inline-block</code> no longer applies. I have used the <a href="../vertical-align.html"><code>vertical-align</code></a> property on my item when in the <code>inline-block</code> display mode, but this property does not apply to grid items and, therefore, is ignored once the item becomes a grid item:</p>
 <div class="code-example"><pre class="brush: css hidden notranslate"><code>* {
   box-sizing: border-box;
@@ -277,7 +277,7 @@ img {
   &lt;/ul&gt;
 &lt;/div&gt;
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Overwriting other values of display sample" id="frame_overwriting_other_values_of_display" width="500" height="480" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_grid_layout/Grid_layout_and_progressive_enhancement/" data-live-id="overwriting_other_values_of_display" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Overwriting other values of display sample</a></div>
 <p>Once again it is the width on the item we need to address, and then any other properties we want to enhance. In this example I have again used <code>gap</code>, rather than margins and negative margins to create my gutters.</p></div></section><section aria-labelledby="how_does_the_specification_define_these_overrides"><h2 id="how_does_the_specification_define_these_overrides"><a href="#how_does_the_specification_define_these_overrides">How does the specification define these overrides?</a></h2><div class="section-content"><p>The CSS grid layout specification details why we can overwrite the behavior of certain properties when something becomes a grid item. The key sections of the specification are:</p>
 <ul>
 <li><a href="https://drafts.csswg.org/css-grid/#grid-containers" class="external" target="_blank">Establishing grid containers</a></li>

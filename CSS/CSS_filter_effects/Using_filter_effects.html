@@ -124,7 +124,7 @@ img:focus {
   height: 100%;
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Applying sepia filter effect sample" id="frame_applying_sepia_filter_effect" width="600" height="550" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_filter_effects/Using_filter_effects/" data-live-id="applying_sepia_filter_effect" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div></div></section><section aria-labelledby="applying_filter_effects_to_other_elements"><h3 id="applying_filter_effects_to_other_elements"><a href="#applying_filter_effects_to_other_elements">Applying filter effects to other elements</a></h3><div class="section-content"><p>While generally applied to images, the <code>filter</code> and <code>backdrop-filter</code> properties can be applied to any element or pseudo-element.</p>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Applying sepia filter effect sample</a></div></div></section><section aria-labelledby="applying_filter_effects_to_other_elements"><h3 id="applying_filter_effects_to_other_elements"><a href="#applying_filter_effects_to_other_elements">Applying filter effects to other elements</a></h3><div class="section-content"><p>While generally applied to images, the <code>filter</code> and <code>backdrop-filter</code> properties can be applied to any element or pseudo-element.</p>
 <p>In this example, a glow effect is added using a <a href="../filter-function/drop-shadow.html"><code>drop-shadow()</code></a> filter with a <code>3px</code> blur and <code>0</code> offset.</p>
 <div class="code-example"><div class="example-header"><span class="language-name">css</span></div><pre class="brush: css notranslate"><code>h1 {
   color: midnightblue;
@@ -138,7 +138,7 @@ img:focus {
 </code></pre></div>
 <div class="code-example"><pre class="brush: html hidden notranslate"><code>&lt;h1&gt;Glow created with CSS filter&lt;/h1&gt;
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Applying filter effects to other elements sample" id="frame_applying_filter_effects_to_other_elements" width="100%" height="80" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_filter_effects/Using_filter_effects/" data-live-id="applying_filter_effects_to_other_elements" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div></div></section><section aria-labelledby="applying_multiple_filters"><h3 id="applying_multiple_filters"><a href="#applying_multiple_filters">Applying multiple filters</a></h3><div class="section-content"><p>While the sepia <code>filter</code> example included only a single filter function, you can set multiple filters. The <code>filter</code> and <code>backdrop-filter</code> properties accept a space-separated list of filters, which are applied in the order declared.</p>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Applying filter effects to other elements sample</a></div></div></section><section aria-labelledby="applying_multiple_filters"><h3 id="applying_multiple_filters"><a href="#applying_multiple_filters">Applying multiple filters</a></h3><div class="section-content"><p>While the sepia <code>filter</code> example included only a single filter function, you can set multiple filters. The <code>filter</code> and <code>backdrop-filter</code> properties accept a space-separated list of filters, which are applied in the order declared.</p>
 <p>This example applies two filters — <a href="../filter-function/hue-rotate.html"><code>hue-rotate()</code></a> and <a href="../filter-function/blur.html"><code>blur()</code></a> — via the <code>backdrop-filter</code> property. The backdrop, the area behind the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p"><code>&lt;p&gt;</code></a> element, has a color shift and a blur applied.</p>
 <div class="code-example"><div class="example-header"><span class="language-name">css</span></div><pre class="brush: css notranslate"><code>.container {
   background: url(image.jpg) no-repeat left / contain goldenrod;
@@ -168,7 +168,7 @@ p {
   &lt;/p&gt;
 &lt;/div&gt;
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Applying multiple filters sample" id="frame_applying_multiple_filters" width="100%" height="300" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_filter_effects/Using_filter_effects/" data-live-id="applying_multiple_filters" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div></div></section><section aria-labelledby="applying_repeated_filters"><h3 id="applying_repeated_filters"><a href="#applying_repeated_filters">Applying repeated filters</a></h3><div class="section-content"><p>As filters are applied in sequential order, you can use filter functions more than once. In this example, the <a href="../filter-function/drop-shadow.html"><code>drop-shadow()</code></a> filter has been used four times, each time with a different <code>&lt;shadow&gt;</code> value.</p>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Applying multiple filters sample</a></div></div></section><section aria-labelledby="applying_repeated_filters"><h3 id="applying_repeated_filters"><a href="#applying_repeated_filters">Applying repeated filters</a></h3><div class="section-content"><p>As filters are applied in sequential order, you can use filter functions more than once. In this example, the <a href="../filter-function/drop-shadow.html"><code>drop-shadow()</code></a> filter has been used four times, each time with a different <code>&lt;shadow&gt;</code> value.</p>
 <div class="code-example"><div class="example-header"><span class="language-name">html</span></div><pre class="brush: html notranslate"><code>&lt;img src="mandala.svg" alt="Colorful mandala" role="img" /&gt;
 &lt;img src="mandala.svg" alt="Plain mandala" role="img" /&gt;
 </code></pre></div>
@@ -187,7 +187,7 @@ img + img {
 }
 </code></pre></div>
 <p>In the first Mandala example, four drop shadows are applied to a line-drawn SVG. The same SVG, with the filter removed with <code>filter: none</code>, is included for comparison.</p>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Applying repeated filters sample" id="frame_applying_repeated_filters" width="600" height="400" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_filter_effects/Using_filter_effects/" data-live-id="applying_repeated_filters" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div></div></section><section aria-labelledby="specifying_filter_function_order"><h3 id="specifying_filter_function_order"><a href="#specifying_filter_function_order">Specifying filter function order</a></h3><div class="section-content"><p>When creating filter effects, the <code>filter</code> or <code>backdrop-filter</code> property is provided a space-separated list of filters. These filter effects are applied in the order in which they appear.</p>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Applying repeated filters sample</a></div></div></section><section aria-labelledby="specifying_filter_function_order"><h3 id="specifying_filter_function_order"><a href="#specifying_filter_function_order">Specifying filter function order</a></h3><div class="section-content"><p>When creating filter effects, the <code>filter</code> or <code>backdrop-filter</code> property is provided a space-separated list of filters. These filter effects are applied in the order in which they appear.</p>
 <p>In this example, both <code>magenta</code> drop shadow and <code>180deg</code> hue rotation are applied on the level-one heading. The example shows the effect when these filters are applied in different orders.</p>
 <div class="code-example"><div class="example-header"><span class="language-name">css</span></div><pre class="brush: css notranslate"><code>h1 {
   color: midnightblue;
@@ -208,7 +208,7 @@ img + img {
 &lt;h1 id="shadowFirst"&gt;Drop shadow applied before hue change.&lt;/h1&gt;
 &lt;h1&gt;No filter effects applied.&lt;/h1&gt;
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Applying a filter to an element sample" id="frame_applying_a_filter_to_an_element" width="100%" height="280" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_filter_effects/Using_filter_effects/" data-live-id="applying_a_filter_to_an_element" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Applying a filter to an element sample</a></div>
 <p>The same filters are applied to both the lines of text but in a different order. In the first line, the hue of the text is altered before the shadow is applied, so the shadow is <code>magenta</code>. In the second line, the drop shadow is added to the dark blue text, and then the hue of both the text and the shadow are altered.</p>
 <p>No filter effect is applied to the third line to show the original effect as a comparison. So the third line stays as <code>midnightblue</code> or <code>#191970</code>. The <code>hue-rotate(180deg)</code> filter changes the text in the first two lines to <code>#252500</code>.</p>
 <div class="notecard note">
@@ -284,7 +284,7 @@ filter: url("https://example.com/svg/filters.svg#blur3");
   filter: url(#blur);
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="blur example sample" id="frame_blur_example" width="100%" height="550" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_filter_effects/Using_filter_effects/" data-live-id="blur_example" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div></div></section><section aria-labelledby="see_also"><h2 id="see_also"><a href="#see_also">See also</a></h2><div class="section-content"><ul>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">blur example sample</a></div></div></section><section aria-labelledby="see_also"><h2 id="see_also"><a href="#see_also">See also</a></h2><div class="section-content"><ul>
 <li><a href="../mask.html"><code>mask</code></a></li>
 <li><a href="../background-blend-mode.html"><code>background-blend-mode</code></a>, <a href="../mix-blend-mode.html"><code>mix-blend-mode</code></a></li>
 <li><a href="../CSS_filter_effects.html">CSS filter effects</a></li>

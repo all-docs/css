@@ -121,7 +121,7 @@ A composite operation can also be specified in a keyframe. In that case, the spe
 }
 </code></pre></div>
 <h4 id="result">Result</h4>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Reversing the animation direction sample" id="frame_reversing_the_animation_direction" width="100%" height="250" src="about:blank" data-live-path="/en-US/docs/Web/CSS/animation-composition/" data-live-id="reversing_the_animation_direction" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Reversing the animation direction sample</a></div>
 <ul>
 <li>With <code>replace</code>, the final effect value for the <code>transform</code> property in the <code>0%, 20%</code> keyframe is <code>translateX(100px)</code> (completely replacing the underlying value <code>translateX(30px) rotate(45deg)</code>). In this case, the element rotates from 45deg to 0deg as it animates from the default value set on the element itself to the non-rotated value set at the 0% mark. This is the default behavior.</li>
 <li>With <code>add</code>, the final effect value for the <code>transform</code> property in the <code>0%, 20%</code> keyframe is <code>translateX(30px) rotate(45deg)</code> followed by <code>translateX(100px)</code>. So the element is moved <code>30px</code> to the right, rotated <code>45deg</code>, then translated <code>100px</code> more along the redirected X axis.</li>

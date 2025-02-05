@@ -67,7 +67,7 @@ rect:nth-of-type(5) {
 }
 </code></pre></div>
 <h4 id="results">Results</h4>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Creating rounded corners sample" id="frame_creating_rounded_corners" width="300" height="180" src="about:blank" data-live-path="/en-US/docs/Web/CSS/ry/" data-live-id="creating_rounded_corners" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Creating rounded corners sample</a></div>
 <p>The first rectangle defaults to <code>auto</code>; as all the <code>rx</code> values in this example also default to <code>auto</code>, the used value of <code>ry</code> is <code>0</code>. The red and blue rectangles have <code>10px</code> and <code>2em</code> rounded corners, respectively. As the SVG viewport defaults to 300px by 150px, the orange rectangle's <code>5%</code> value creates a <code>7.5px</code> radius. The green rectangle has <code>ry: 80%</code> set. However, as the value of <code>ry</code> is never more than <code>50%</code> of the height of the rectangle, the effect is as if <code>ry: 50%; rx: 50%</code> was set.</p></div></section><section aria-labelledby="defining_the_vertical_radius_of_an_ellipse"><h3 id="defining_the_vertical_radius_of_an_ellipse"><a href="#defining_the_vertical_radius_of_an_ellipse">Defining the vertical radius of an ellipse</a></h3><div class="section-content"><p>This basic <code>&lt;ellipse&gt;</code> example demonstrates the CSS <code>ry</code> property taking precedence over an SVG <code>ry</code> attribute to define the shape's vertical radius.</p>
 <h4 id="html_2">HTML</h4>
 <p>We include two identical <code>&lt;ellipse&gt;</code> elements in an SVG; each with the <code>ry</code> attribute set to <code>20</code>.</p>
@@ -89,7 +89,7 @@ ellipse:first-of-type {
 }
 </code></pre></div>
 <h4 id="results_2">Results</h4>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Defining the vertical radius of an ellipse sample" id="frame_defining_the_vertical_radius_of_an_ellipse" width="300" height="180" src="about:blank" data-live-path="/en-US/docs/Web/CSS/ry/" data-live-id="defining_the_vertical_radius_of_an_ellipse" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Defining the vertical radius of an ellipse sample</a></div>
 <p>The styled ellipse's vertical radius is <code>80px</code>, as defined in the CSS <code>ry</code> property value. The unstyled ellipse's vertical radius is <code>20px</code>, which was defined by the <code>ry</code> attribute.</p></div></section><section aria-labelledby="ellipse_vertical_radius_percentage_values"><h3 id="ellipse_vertical_radius_percentage_values"><a href="#ellipse_vertical_radius_percentage_values">Ellipse vertical radius percentage values</a></h3><div class="section-content"><p>This example demonstrates using percentage values for <code>ry</code>.</p>
 <h4 id="html_3">HTML</h4>
 <p>We use the same markup as the previous example.</p>
@@ -111,7 +111,7 @@ ellipse:first-of-type {
 }
 </code></pre></div>
 <h4 id="results_3">Results</h4>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Ellipse vertical radius percentage values sample" id="frame_ellipse_vertical_radius_percentage_values" width="300" height="180" src="about:blank" data-live-path="/en-US/docs/Web/CSS/ry/" data-live-id="ellipse_vertical_radius_percentage_values" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Ellipse vertical radius percentage values sample</a></div>
 <p>When using percentage values for <code>ry</code>, the values are relative to the height of the SVG viewport. Here, the size of the styled ellipse vertical radius is <code>30%</code> of the height of the current SVG viewport. As the height defaulted to <code>150px</code>, the <code>ry</code> value is <code>45px</code>, making the ellipse <code>90px</code> tall.</p></div></section><h2 id="specifications"><a href="#specifications">Specifications</a></h2><table class="standard-table"><thead><tr><th scope="col">Specification</th></tr></thead><tbody><tr><td><a href="https://svgwg.org/svg2-draft/geometry.html#RY">Scalable Vector Graphics (SVG) 2<!-- --> <br><small># <!-- -->RY</small></a></td></tr></tbody></table><h2 id="browser_compatibility"><a href="#browser_compatibility">Browser compatibility</a></h2><p>BCD tables only load in the browser<noscript> <!-- -->with JavaScript enabled. Enable JavaScript to view data.</noscript></p><section aria-labelledby="see_also"><h2 id="see_also"><a href="#see_also">See also</a></h2><div class="section-content"><ul>
 <li>Geometry properties: <code>ry</code>, <a href="cx.html"><code>cx</code></a>, <a href="cy.html"><code>cy</code></a>, <a href="r.html"><code>r</code></a>, <a href="rx.html"><code>rx</code></a>, <a href="x.html"><code>x</code></a>, <a href="y.html"><code>y</code></a>, <a href="height.html"><code>height</code></a>, <a href="height.html"><code>height</code></a></li>
 <li><a href="fill.html"><code>fill</code></a></li>

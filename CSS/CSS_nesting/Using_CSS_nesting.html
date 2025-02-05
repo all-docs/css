@@ -65,7 +65,7 @@ label {
 }
 </code></pre></div>
 <h5 id="result">Result</h5>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Without nesting selector sample" id="frame_without_nesting_selector" width="100%" height="120" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_nesting/Using_CSS_nesting/" data-live-id="without_nesting_selector" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Without nesting selector sample</a></div>
 <h4 id="with_nesting_selector">With nesting selector</h4>
 <div class="code-example"><pre class="brush: html hidden notranslate"><code>&lt;form&gt;
   &lt;label for="name"&gt;Name:
@@ -99,7 +99,7 @@ label {
 }
 </code></pre></div>
 <h5 id="result_2">Result</h5>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="With nesting selector sample" id="frame_with_nesting_selector" width="100%" height="120" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_nesting/Using_CSS_nesting/" data-live-id="with_nesting_selector" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div></div></section><section aria-labelledby="combinators"><h2 id="combinators"><a href="#combinators">Combinators</a></h2><div class="section-content"><p><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Combinators">CSS Combinators</a> can also be used with or without the <code>&amp;</code> nesting selector.</p></div></section><section aria-labelledby="example"><h3 id="example"><a href="#example">Example</a></h3><div class="section-content"><h4 id="nesting_the_sibling_combinator">Nesting the sibling combinator</h4>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">With nesting selector sample</a></div></div></section><section aria-labelledby="combinators"><h2 id="combinators"><a href="#combinators">Combinators</a></h2><div class="section-content"><p><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Combinators">CSS Combinators</a> can also be used with or without the <code>&amp;</code> nesting selector.</p></div></section><section aria-labelledby="example"><h3 id="example"><a href="#example">Example</a></h3><div class="section-content"><h4 id="nesting_the_sibling_combinator">Nesting the sibling combinator</h4>
 <p>In this example, the first paragraph after each <code>&lt;h2&gt;</code> is targeted with the <a href="../Next-sibling_combinator.html">next-sibling combinator (<code>+</code>)</a> using CSS nesting.</p>
 <h5 id="html_2">HTML</h5>
 <div class="code-example"><div class="example-header"><span class="language-name">html</span></div><pre class="brush: html notranslate"><code>&lt;h2&gt;Heading&lt;/h2&gt;
@@ -126,7 +126,7 @@ h2 {
 */
 </code></pre></div>
 <h5 id="result_3">Result</h5>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Nesting the sibling combinator sample" id="frame_nesting_the_sibling_combinator" width="100%" height="135" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_nesting/Using_CSS_nesting/" data-live-id="nesting_the_sibling_combinator" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div></div></section><section aria-labelledby="compound_selectors"><h2 id="compound_selectors"><a href="#compound_selectors">Compound selectors</a></h2><div class="section-content"><p>When using <a href="../CSS_selectors/Selector_structure.html#compound_selector">compound selectors</a> in nested CSS you <strong>have</strong> to use the <code>&amp;</code> nesting selector. This is because the browser will automatically add whitespace between selectors that do not use the <code>&amp;</code> nesting selector.</p>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Nesting the sibling combinator sample</a></div></div></section><section aria-labelledby="compound_selectors"><h2 id="compound_selectors"><a href="#compound_selectors">Compound selectors</a></h2><div class="section-content"><p>When using <a href="../CSS_selectors/Selector_structure.html#compound_selector">compound selectors</a> in nested CSS you <strong>have</strong> to use the <code>&amp;</code> nesting selector. This is because the browser will automatically add whitespace between selectors that do not use the <code>&amp;</code> nesting selector.</p>
 <p>In order to target an element with <code>class="a b"</code> the <code>&amp;</code> nesting selector is needed otherwise the whitespace will break the compound selector.</p>
 <div class="code-example"><div class="example-header"><span class="language-name">css</span></div><pre class="brush: css notranslate"><code>.a {
   /* styles for element with class="a" */
@@ -212,7 +212,7 @@ h2 {
 }
 </code></pre></div>
 <h5 id="result_4">Result</h5>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Nesting and compound selectors sample" id="frame_nesting_and_compound_selectors" width="100%" height="455" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_nesting/Using_CSS_nesting/" data-live-id="nesting_and_compound_selectors" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div></div></section><section aria-labelledby="appended_nesting_selector"><h2 id="appended_nesting_selector"><a href="#appended_nesting_selector">Appended nesting selector</a></h2><div class="section-content"><p>The <code>&amp;</code> nesting selector can also be appended to a nested selector which has the effect of reversing the context.</p>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Nesting and compound selectors sample</a></div></div></section><section aria-labelledby="appended_nesting_selector"><h2 id="appended_nesting_selector"><a href="#appended_nesting_selector">Appended nesting selector</a></h2><div class="section-content"><p>The <code>&amp;</code> nesting selector can also be appended to a nested selector which has the effect of reversing the context.</p>
 <p>This can be useful when we have styles for a child element that change when a parent element is given a different class:</p>
 <div class="code-example"><div class="example-header"><span class="language-name">html</span></div><pre class="brush: html notranslate"><code>&lt;div&gt;
   &lt;span class="foo"&gt;text&lt;/span&gt;
@@ -271,7 +271,7 @@ h2 {
 }
 </code></pre></div>
 <h5 id="result_5">Result</h5>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Appending nesting selector sample" id="frame_appending_nesting_selector" width="100%" height="250" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_nesting/Using_CSS_nesting/" data-live-id="appending_nesting_selector" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div></div></section><section aria-labelledby="nested_declarations_rule"><h2 id="nested_declarations_rule"><a href="#nested_declarations_rule">Nested declarations rule</a></h2><div class="section-content"><p>The nested declaration rule is that CSS rules are parsed in the order that they are written in the CSS document.</p>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Appending nesting selector sample</a></div></div></section><section aria-labelledby="nested_declarations_rule"><h2 id="nested_declarations_rule"><a href="#nested_declarations_rule">Nested declarations rule</a></h2><div class="section-content"><p>The nested declaration rule is that CSS rules are parsed in the order that they are written in the CSS document.</p>
 <p>With the following CSS:</p>
 <div class="code-example"><div class="example-header"><span class="language-name">css</span></div><pre class="brush: css notranslate"><code>.foo {
   background-color: silver;

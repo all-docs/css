@@ -73,7 +73,7 @@
   padding: 10px;
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Contain internal floats sample" id="frame_contain_internal_floats" width="200" height="480" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_display/Block_formatting_context/" data-live-id="contain_internal_floats" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div></div></section><section aria-labelledby="exclude_external_floats"><h3 id="exclude_external_floats"><a href="#exclude_external_floats">Exclude external floats</a></h3><div class="section-content"><p>In the following example, we are using <code>display:flow-root</code> and floats, creating two side-by-side boxes demonstrating that an element in the normal flow establishes a new BFC and does not overlap the margin box of any floats in the same block formatting context as the element itself.</p>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Contain internal floats sample</a></div></div></section><section aria-labelledby="exclude_external_floats"><h3 id="exclude_external_floats"><a href="#exclude_external_floats">Exclude external floats</a></h3><div class="section-content"><p>In the following example, we are using <code>display:flow-root</code> and floats, creating two side-by-side boxes demonstrating that an element in the normal flow establishes a new BFC and does not overlap the margin box of any floats in the same block formatting context as the element itself.</p>
 <h4 id="html_2">HTML</h4>
 <div class="code-example"><div class="example-header"><span class="language-name">html</span></div><pre class="brush: html notranslate"><code>&lt;section&gt;
   &lt;div class="float"&gt;Try to resize this outer float&lt;/div&gt;
@@ -110,7 +110,7 @@
   padding: 10px;
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Exclude external floats sample" id="frame_exclude_external_floats" width="200" height="330" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_display/Block_formatting_context/" data-live-id="exclude_external_floats" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div></div></section><section aria-labelledby="prevent_margin_collapsing"><h3 id="prevent_margin_collapsing"><a href="#prevent_margin_collapsing">Prevent margin collapsing</a></h3><div class="section-content"><p>You can create a new BFC to avoid <a href="../CSS_box_model/Mastering_margin_collapsing.html">margin collapsing</a> between two neighbor elements.</p>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Exclude external floats sample</a></div></div></section><section aria-labelledby="prevent_margin_collapsing"><h3 id="prevent_margin_collapsing"><a href="#prevent_margin_collapsing">Prevent margin collapsing</a></h3><div class="section-content"><p>You can create a new BFC to avoid <a href="../CSS_box_model/Mastering_margin_collapsing.html">margin collapsing</a> between two neighbor elements.</p>
 <h4 id="margin_collapsing_example">Margin collapsing example</h4>
 <p>In this example we have two adjacent <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div"><code>&lt;div&gt;</code></a> elements, which each have a vertical margin of <code>10px</code>. Because of margin collapsing, the vertical gap between them is <code>10px</code>, not the <code>20px</code> we might expect.</p>
 <div class="code-example"><div class="example-header"><span class="language-name">html</span></div><pre class="brush: html notranslate"><code>&lt;div class="blue"&gt;&lt;/div&gt;
@@ -130,7 +130,7 @@
   background: red;
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Margin collapsing example sample" id="frame_margin_collapsing_example" width="120" height="170" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_display/Block_formatting_context/" data-live-id="margin_collapsing_example" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Margin collapsing example sample</a></div>
 <h4 id="preventing_margin_collapsing">Preventing margin collapsing</h4>
 <p>In this example, we wrap the second <code>&lt;div&gt;</code> in an outer <code>&lt;div&gt;</code>, and create a new BFC by using <code>overflow: hidden</code> on the outer <code>&lt;div&gt;</code>. This new BFC prevents the margins of the nested <code>&lt;div&gt;</code> from collapsing with those of the outer <code>&lt;div&gt;</code>.</p>
 <div class="code-example"><div class="example-header"><span class="language-name">html</span></div><pre class="brush: html notranslate"><code>&lt;div class="blue"&gt;&lt;/div&gt;
@@ -157,7 +157,7 @@
   background: transparent;
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Preventing margin collapsing sample" id="frame_preventing_margin_collapsing" width="120" height="170" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_display/Block_formatting_context/" data-live-id="preventing_margin_collapsing" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div></div></section><h2 id="specifications"><a href="#specifications">Specifications</a></h2><table class="standard-table"><thead><tr><th scope="col">Specification</th></tr></thead><tbody><tr><td><a href="https://drafts.csswg.org/css-display/#block-formatting-context">CSS Display Module Level 3<!-- --> <br><small># <!-- -->block-formatting-context</small></a></td></tr></tbody></table><section aria-labelledby="see_also"><h2 id="see_also"><a href="#see_also">See also</a></h2><div class="section-content"><ul>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Preventing margin collapsing sample</a></div></div></section><h2 id="specifications"><a href="#specifications">Specifications</a></h2><table class="standard-table"><thead><tr><th scope="col">Specification</th></tr></thead><tbody><tr><td><a href="https://drafts.csswg.org/css-display/#block-formatting-context">CSS Display Module Level 3<!-- --> <br><small># <!-- -->block-formatting-context</small></a></td></tr></tbody></table><section aria-labelledby="see_also"><h2 id="see_also"><a href="#see_also">See also</a></h2><div class="section-content"><ul>
 <li><a href="../Syntax.html">CSS syntax</a></li>
 <li><a href="../Specificity.html">Specificity</a></li>
 <li><a href="../Inheritance.html">Inheritance</a></li>

@@ -44,7 +44,7 @@
   flex-direction: row-reverse;
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="flex-direction sample" id="frame_flex-direction" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_flexible_box_layout/Ordering_flex_items/" data-live-id="flex-direction" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">flex-direction sample</a></div>
 <p>In the same way that changing the value of <code>flex-direction</code> does not change the tabbing order, changing this value does not change paint order. It is a visual reversal of the items only.</p></div></section><section aria-labelledby="the_order_property"><h2 id="the_order_property"><a href="#the_order_property">The order property</a></h2><div class="section-content"><p>In addition to reversing the order in which flex items are visually displayed, you can target individual items and change where they appear in the visual order with the <a href="../order.html"><code>order</code></a> property.</p>
 <p>The <a href="../order.html"><code>order</code></a> property is designed to lay the items out in <em>ordinal groups</em>. This means items are assigned an integer that represents their group. The items are then placed in the visual order according to that integer, lowest values first. If more than one item has the same integer value, then within that group the items are laid out as per source order.</p>
 <p>As an example, five flex items are assigned <code>order</code> values as follows:</p>
@@ -101,7 +101,7 @@
   order: 1;
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="order sample" id="frame_order" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_flexible_box_layout/Ordering_flex_items/" data-live-id="order" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">order sample</a></div>
 <p>Flex items have a default <code>order</code> value of <code>0</code>. Therefore, items with an integer value greater than <code>0</code> will be displayed after any items that have not been given an explicit <code>order</code> value.</p>
 <p>You can also use negative values with <code>order</code>, which can be quite useful. If you want to make one item display first and leave the order of all other items unchanged, you can give that item order of <code>-1</code>. As this is lower than <code>0</code>, the item will always be displayed first.</p>
 <p>In the live code example below, the items are laid out using flexbox. By changing which item has the class <code>active</code> assigned to it in the HTML, you can change which item displays first and therefore becomes full width at the top of the layout, with the other items displaying below it.</p>
@@ -137,7 +137,7 @@
   flex: 1 0 100%;
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="negative-order sample" id="frame_negative-order" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_flexible_box_layout/Ordering_flex_items/" data-live-id="negative-order" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">negative-order sample</a></div>
 <p>The items are displayed in <em>order-modified document order</em> meaning the value of the <code>order</code> property is taken into account before the items are displayed.</p>
 <p><code>Order</code> also changes the paint order of the items; items with a lower value for <code>order</code> are painted first and items with a higher value for <code>order</code> painted afterwards.</p></div></section><section aria-labelledby="the_order_property_and_accessibility"><h2 id="the_order_property_and_accessibility"><a href="#the_order_property_and_accessibility">The order property and accessibility</a></h2><div class="section-content"><p>Use of the <code>order</code> property has the same implications for accessibility as changing the direction with <code>flex-direction</code>. Using <code>order</code> changes the order in which items are painted, and the order in which they appear visually. It does not change the sequential navigation order of the items. Therefore, if a user is using a keyboard to tab through the content on the page, they could find themselves jumping around your content in a very confusing way.</p>
 <p>By tabbing around any of the live examples on this page, you can see how <code>order</code> is potentially creating a strange experience for anyone not using a pointing device like a mouse. To read more about this disconnect of visual order and logical order and some of the potential problems it raises for accessibility, see the following resources.</p>
@@ -187,7 +187,7 @@
   text-align: right;
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="usecase-order sample" id="frame_usecase-order" height="220px" src="about:blank" data-live-path="/en-US/docs/Web/CSS/CSS_flexible_box_layout/Ordering_flex_items/" data-live-id="usecase-order" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">usecase-order sample</a></div>
 <p>These small tweaks are the sort of cases where the <code>order</code> property makes sense. Keep the logical order the same as the reading and tab order of the document, and maintain that in the most accessible and structured fashion. Then use <code>order</code> for purely visual design tweaks. Don't reorder items that receive keyboard focus. Ensure you always test your content using only a keyboard rather than a mouse or a touchscreen; this will reveal if your development choices make it more complex to navigate the content.</p></div></section><section aria-labelledby="see_also"><h2 id="see_also"><a href="#see_also">See also</a></h2><div class="section-content"><ul>
 <li><a href="Basic_concepts_of_flexbox.html">Basic concepts of flexbox</a></li>
 <li><a href="Relationship_of_flexbox_to_other_layout_methods.html">Relationship of flexbox to other layout methods</a></li>

@@ -29,7 +29,7 @@ former_element ~ target_element { style properties }
   color: red;
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Using the combinator with simple selectors sample" id="frame_using_the_combinator_with_simple_selectors" width="auto" height="300" src="about:blank" data-live-path="/en-US/docs/Web/CSS/Subsequent-sibling_combinator/" data-live-id="using_the_combinator_with_simple_selectors" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div></div></section><section aria-labelledby="using_the_combinator_with_complex_selectors"><h3 id="using_the_combinator_with_complex_selectors"><a href="#using_the_combinator_with_complex_selectors">Using the combinator with complex selectors</a></h3><div class="section-content"><p>This example contains two <a href="CSS_selectors/Selector_structure.html#complex_selector">complex selectors</a>, both using the subsequent-sibling combinator: <code>.foo p ~ span</code> and <code>.foo p ~ .foo span</code>.</p>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Using the combinator with simple selectors sample</a></div></div></section><section aria-labelledby="using_the_combinator_with_complex_selectors"><h3 id="using_the_combinator_with_complex_selectors"><a href="#using_the_combinator_with_complex_selectors">Using the combinator with complex selectors</a></h3><div class="section-content"><p>This example contains two <a href="CSS_selectors/Selector_structure.html#complex_selector">complex selectors</a>, both using the subsequent-sibling combinator: <code>.foo p ~ span</code> and <code>.foo p ~ .foo span</code>.</p>
 <ul>
 <li>The first complex selector, <code>.foo p ~ span</code>, matches all spans that come after a paragraph <em>if</em> the span and paragraph share the same parent <strong>and</strong> that parent or an ancestor of that parent has the class <code>.foo</code>.</li>
 <li>The second complex selector, <code>.foo p ~ .foo span</code>, matches all spans that are a descendant of the element with class <code>.foo</code> <em>if</em> that element is a sibling of the previously mentioned paragraph.</li>
@@ -53,7 +53,7 @@ former_element ~ target_element { style properties }
   color: green;
 }
 </code></pre></div>
-<div class="code-example"><div class="example-header"></div><iframe class="sample-code-frame" title="Using the combinator with complex selectors sample" id="frame_using_the_combinator_with_complex_selectors" width="auto" height="200" src="about:blank" data-live-path="/en-US/docs/Web/CSS/Subsequent-sibling_combinator/" data-live-id="using_the_combinator_with_complex_selectors" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe></div>
+<div class="code-example"><div class="example-header"></div><a href="about:blank">Using the combinator with complex selectors sample</a></div>
 <p>In the above HTML, the two siblings of <code>.foo p</code> are <code>span</code> and <code>.foo</code>. The green <code>span</code> is a descendant of the <code>.foo</code> class, which is a sibling of <code>p</code>.</p>
 <ul>
 <li>When the target selector is <code>span</code>, the <code>span</code> element that is a sibling of <code>p</code> is selected. The <code>p</code> element is a descendant of <code>.foo</code>, so are its <code>span</code> siblings.</li>
